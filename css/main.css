@@ -314,6 +314,16 @@ a:hover, a:focus {
   padding-top: 120px;
 }
 
+.contact-icons {
+  padding: 0 30px;
+  display: inline-block;
+  color: white;
+}
+
+a:hover a:focus {
+  color: white;
+}
+
 .home-content {
   background-color: white;
   color: black;
@@ -462,20 +472,7 @@ a:hover, a:focus {
   background-color: #42DCA3;
 }
 
-ul.banner-social-buttons {
-  margin-top: 0;
-}
-
-
-footer {
-  padding: 50px 0;
-}
-
-footer p {
-  margin: 0;
-}
-
-::-moz-selection {
+/*::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
@@ -485,9 +482,9 @@ footer p {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
-}
+}*/
 
-img::selection {
+/*img::selection {
   background: transparent;
 }
 
@@ -497,4 +494,4 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
+}*/
