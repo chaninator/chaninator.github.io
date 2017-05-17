@@ -292,6 +292,10 @@ a:hover, a:focus {
   transition: all 500ms ease;
 }
 
+.intro-body {
+  margin-top: 150px;
+}
+
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
@@ -307,7 +311,7 @@ a:hover, a:focus {
 
 .profile-container {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .home-content {
