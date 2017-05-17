@@ -11,6 +11,8 @@ function collapseNavbar() {
 function hideNavname() {
     if ($(".navbar").offset().top > 300) {
         $(".navname").addClass("top-nav-name-collapse");
+        $(".navname").addClass("animated");
+        $(".navname").addClass("pulse");
     } else {
         $(".navname").removeClass("top-nav-name-collapse");
     }
