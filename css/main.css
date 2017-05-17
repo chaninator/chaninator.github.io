@@ -1,0 +1,432 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+a {
+  color: #42DCA3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+.light {
+  font-weight: 400;
+}
+
+#project1:before, #project2:before, #project3:before {
+ content: "";
+ opacity: 0.3;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ position: absolute;
+ z-index: -1;
+ transition: transform .8s ease-in-out;
+}
+
+#project1:before {
+  background: url("http://i.imgur.com/7BVc4ua.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#project2:before {
+  background: url("http://i.imgur.com/BYzJ4nQ.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#project3:before {
+  background: url("http://i.imgur.com/CogBxxC.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#project1:hover .project-title, #project2:hover .project-title, #project3:hover .project-title{
+  color: black;
+  background-color: white;
+  opacity: 1;
+}
+
+.project {
+  border: 3px solid rgba(255, 255, 255, 1);
+  height: 350px;
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 20px;
+  width: 350px;
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  border: 2px solid rgba(255, 255, 255, 1)
+}
+
+.project-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.project-title {
+  border: 2px solid rgba(255, 255, 255, 1);
+  width: 200px;
+  padding: 20px 0;
+  color: white;
+}
+
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+.section-title {
+  border: 2px solid rgba(255, 255, 255, 1);
+  width: 200px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+}
+
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+
+.navbar-custom a {
+  color: white;
+}
+
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+  text-decoration-line: overline;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+  outline: none;
+}
+
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+.navbar-custom .nav li.active a:hover {
+  color: black;
+  text-decoration: overline;
+}
+
+.navname {
+  visibility: hidden;
+}
+
+.top-nav-name-collapse {
+  visibility: visible;
+  transition: visibility 0s, opacity 5s linear;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+}
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+  font-size: 30px;
+}
+
+.intro .intro-body .intro-text {
+  font-size: 18px;
+  font-family: "roboto";
+}
+
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+
+  .intro .intro-body .brand-heading {
+    font-size: 60px;
+  }
+
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+    font-family: "roboto";
+  }
+}
+
+.btn-rect {
+  width: 150px;
+  height: 70px;
+  margin-top: 235px;
+  padding: 5px 16px;
+  border: 2px solid white;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-rect:hover, .btn-rect:focus {
+  outline: none;
+  color: black;
+  background: rgba(255, 255, 255, 1);
+}
+
+.btn-rect i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+
+.btn-rect i.animated  {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(.8);
+    transform: scale(.8);
+  }
+
+  50% {
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -moz-transform: scale(.8);
+    transform: scale(.8);
+  }
+}
+
+.content-section {
+  padding-top: 100px;
+
+  /*test section */
+  /*border: 3px solid white;*/
+}
+
+@media (min-width: 767px) {
+  .content-section {
+    padding: 250px 0;
+  }
+
+  . {
+    padding: 100px 0;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+
+.btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #42DCA3;
+  outline: none;
+  color: black;
+  background-color: #42DCA3;
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
