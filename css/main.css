@@ -278,6 +278,7 @@ a:hover, a:focus {
   background-color: white;
   padding: 50px 100px;
   border: 2px solid white;
+  margin-top: 100px;
 }
 
 .about-blurb:hover h4:hover {
@@ -306,6 +307,7 @@ a:hover, a:focus {
 
 .profile-container {
   text-align: center;
+  padding-top: 50px;
 }
 
 .home-content {
