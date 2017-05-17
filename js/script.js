@@ -18,10 +18,8 @@ function hideNavname() {
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
-
 $(window).scroll(hideNavname);
 $(document).ready(hideNavname);
-
 
 
 // page scrolling - jQuery easing

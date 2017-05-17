@@ -79,16 +79,39 @@ a:hover, a:focus {
   background-size: cover;
 }
 
-#project1:hover .project-title, #project2:hover .project-title, #project3:hover .project-title{
+#project4:before {
+  background: url();
+  background-position: center;
+  background-size: cover;
+}
+
+#project5:before {
+  background: url();
+  background-position: center;
+  background-size: cover;
+}
+
+#project6:before {
+  background: url();
+  background-position: center;
+  background-size: cover;
+}
+
+#project1:hover .project-title, #project2:hover .project-title, #project3:hover .project-title, #project4:hover .project-title, #project5:hover .project-title, #project6:hover .project-title{
   color: black;
   background-color: white;
   opacity: 1;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 .project {
   border: 3px solid rgba(255, 255, 255, 1);
   height: 350px;
-  margin: 0 30px;
+  margin: 0 30px 30px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,8 +121,8 @@ a:hover, a:focus {
 }
 
 .profile-img {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   border: 2px solid rgba(255, 255, 255, 1)
 }
 
@@ -134,7 +157,7 @@ a:hover, a:focus {
 
 .navbar-custom .navbar-toggle {
   color: white;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0);
   font-size: 12px;
 }
 
@@ -195,6 +218,18 @@ a:hover, a:focus {
   transition: visibility 0s, opacity 5s linear;
 }
 
+@media (max-width: 800px) {
+  .navbar {
+    width: 100vw;
+  }
+  .about-blurb {
+    margin: 20px 10px 10px 10px;
+    padding: 50px 50px;
+  }
+
+
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -220,7 +255,7 @@ a:hover, a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../imgs/bg.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -235,6 +270,27 @@ a:hover, a:focus {
   flex-direction: column;
 }
 
+.about-blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  padding: 50px 100px;
+  border: 2px solid white;
+}
+
+.about-blurb:hover h4:hover {
+  color: white
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
@@ -245,8 +301,30 @@ a:hover, a:focus {
 }
 
 .intro .intro-body .intro-text {
-  font-size: 18px;
   font-family: "roboto";
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.home-content {
+  background-color: white;
+  color: black;
+  width: 300px;
+  margin-left: 100px;
+  border: 2px solid white;
+}
+
+.home-content:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  color: white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 @media (min-width: 768px) {
@@ -382,22 +460,6 @@ ul.banner-social-buttons {
   margin-top: 0;
 }
 
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
-  }
-}
 
 footer {
   padding: 50px 0;

@@ -26,7 +26,7 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars fa-2x"></i>
                 </button>
         <div class="navname">
           <a class="navbar-brand page-scroll" href="#page-top">
@@ -35,10 +35,9 @@
         </div>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
+      <!-- nav links-->
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden">
             <a href="#page-top"></a>
           </li>
@@ -49,10 +48,10 @@
             <a class="page-scroll" href="#projects">Projects</a>
           </li>
           <li>
-            <a class="page-scroll" href="#">Resume</a>
+            <a class="page-scroll" href="#contact">Contact</a>
           </li>
           <li>
-            <a class="page-scroll" href="#contact">Contact</a>
+            <a class="page-scroll" href="#">Resume</a>
           </li>
         </ul>
       </div>
@@ -69,10 +68,10 @@
           <div class="col-md-6 animated fadeInLeftBig">
             <h2 class="brand-heading"><span style="font-style: italic">Hi, I'm </span>Andrew Chan</h2>
           </div>
-          <div class="col-md-6">
-            <p class="intro-text">Web Developer</p>
-            <p class="intro-text">Photographer</p>
-            <p class="intro-text">Web Developer</p>
+          <div class="col-md-6 animated fadeInUpBig home-content">
+            <p class="intro-text"><h3>Web Developer</h3></p>
+            <p class="intro-text"><h3>Photographer</h3></p>
+            <p class="intro-text"><h3>Explorer</h3></p>
           </div>
           <div class="row">
             <div class="col-md-12">
@@ -93,7 +92,12 @@
         <h2 class="section-title">About Me</h2>
       </div>
     </div>
-    <img class="profile-img" src="http://i.imgur.com/dG3lw5H.jpg" alt="">
+    <div class="row">
+      <div class="col-md-6 profile-container"><img class="profile-img" src="http://i.imgur.com/dG3lw5H.jpg" alt=""></div>
+      <div class="col-md-6 class="about-blurb""><h4 class="about-blurb">I have always enjoyed creating things from an early age. Today, I am a problem solver, avid learner, and slightly obsessed with boston terriers. I am a photographer with a passion for bringing my visions to reality. With amy visual background, I offer a unique approach to creating web applications with a goal of using visual impact to generate functionality.</h4></div>
+    </div>
+
+
   </section>
 
   <!-- Projects Section -->
@@ -106,20 +110,38 @@
       </div>
       <div class="row project-row">
         <a style="display:block" href="#">
-        <div class="col-xs-3 project" id="project1">
-          <h4 class="project-title">Weather App</h4>
-        </div>
-      </a>
-      <a style="display:block" href="http://health-connect-ga.herokuapp.com/">
-        <div class="col-xs-3 project" id="project2">
-          <h4 class="project-title">Health Connect</h4>
-        </div>
-      </a>
-      <a style="display:block" href="http://sanicland.herokuapp.com/">
-        <div class="col-xs-3 project" id="project3">
-          <h4 class="project-title">Sanic Land</h4>
-        </div>
-      </a>
+          <div class="col-xs-3 project" id="project1">
+            <h4 class="project-title">Weather App</h4>
+          </div>
+        </a>
+        <a style="display:block" href="http://health-connect-ga.herokuapp.com/">
+          <div class="col-xs-3 project" id="project2">
+            <h4 class="project-title">Health Connect</h4>
+          </div>
+        </a>
+        <a style="display:block" href="http://sanicland.herokuapp.com/">
+          <div class="col-xs-3 project" id="project3">
+            <h4 class="project-title">Sanic Land</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="row project-row">
+        <a style="display:block" href="#">
+          <div class="col-xs-3 project" id="project4">
+            <h4 class="project-title">Project</h4>
+          </div>
+        </a>
+        <a style="display:block" href="#">
+          <div class="col-xs-3 project" id="project5">
+            <h4 class="project-title">Project</h4>
+          </div>
+        </a>
+        <a style="display:block" href="#">
+          <div class="col-xs-3 project" id="project6">
+            <h4 class="project-title">Project</h4>
+          </div>
+        </a>
       </div>
 
 
@@ -129,16 +151,19 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="container content-section text-center">
+  <section id="contact" class="container content-section">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>Andrew</h2>
-        <p>Hello!</p>
-        <p><a href="mailto:andrewchandev@gmail.com">andrewchandev@gmail.com</a>
-        </p>
-        <ul class="list-inline banner-social-buttons">
+      <div class="col-md-6 col-md-offset-3 content">
 
-        </ul>
+        <h2 class="section-title">Contact</h2>
+
+        <div>
+          <a href="#"><i class="fa fa-github-alt fa-3x" style:"color: white"></i></a>
+          <a href="#"><i class="fa fa-medium fa-3x" style:"color: white"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square fa-3x" style:"color: white"></i></a>
+          <a href="mailto:andrewchandev@gmail.com"><i class="fa fa-envelope-o fa-3x" style:"color: white"></i></a>
+        </div>
+
       </div>
     </div>
   </section>
