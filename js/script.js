@@ -35,7 +35,7 @@ $(function() {
     });
 });
 
-// Closes the Responsive Menu on Menu Item Click
+// closes hamburger menu on click
 $('.navbar-collapse ul li a').click(function() {
     $(".navbar-collapse").collapse('hide');
 });
