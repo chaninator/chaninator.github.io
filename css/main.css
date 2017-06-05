@@ -49,7 +49,7 @@ a:hover, a:focus {
   font-weight: 400;
 }
 
-#project1:before, #project2:before, #project3:before {
+#project1:before, #project2:before, #project3:before, #project4:before, #project5:before, #project6:before {
  content: "";
  opacity: 0.3;
  top: 0;
@@ -110,15 +110,15 @@ a:hover, a:focus {
 
 .project {
   border: 3px solid rgba(255, 255, 255, 1);
-  height: 350px;
-  margin: 0 30px 30px 30px;
+  height: 325px;
+  width: 325px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
   padding: 0px 20px;
-  width: 350px;
 }
 
 .profile-img {
