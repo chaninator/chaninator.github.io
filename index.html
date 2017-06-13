@@ -12,6 +12,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -65,7 +66,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 animated fadeInLeftBig">
-            <h2 class="brand-heading"><span style="font-style: italic">Hi, I'm </span>Andrew Chan</h2>
+            <h2 class="brand-heading" id="messageLabel">Hi! || I'M ANDREW</h2>
           </div>
           <div class="col-md-6 animated fadeInUpBig home-content">
             <p class="intro-text">
@@ -112,43 +113,159 @@
         </div>
       </div>
       <div class="row project-row">
-        <a style="display:block" href="http://chaninator.github.io/gifbox" target="_blank">
-          <div class="col-xs-3 project" id="project1" >
+        <a style="display:block" id="proj1">
+          <div class="col-xs-3 project" id="project1">
             <h4 class="project-title">Gif Box</h4>
           </div>
         </a>
-        <a style="display:block" href="http://health-connect-ga.herokuapp.com/" target="_blank">
+        <a style="display:block" id="proj2">
           <div class="col-xs-3 project" id="project2">
             <h4 class="project-title">Health Connect</h4>
           </div>
         </a>
-        <a style="display:block" href="http://sanicland.herokuapp.com/" target="_blank">
+        <a style="display:block" id="proj3">
           <div class="col-xs-3 project" id="project3">
-            <h4 class="project-title">Sanic Land</h4>
+            <h4 class="project-title">Hoop It Up</h4>
           </div>
         </a>
       </div>
 
       <div class="row project-row">
-        <a style="display:block" href="http://chaninator.github.io/about-me" target="_blank">
+        <a style="display:block" id="proj4">
           <div class="col-xs-3 project" id="project4">
-            <h4 class="project-title">Personal Website</h4>
+            <h4 class="project-title">Sanic Land</h4>
           </div>
         </a>
-        <a style="display:block" href="#" target="_blank">
+        <a style="display:block" id="proj5">
           <div class="col-xs-3 project" id="project5">
             <h4 class="project-title">Weather App</h4>
           </div>
         </a>
-        <a style="display:block" href="#" target="_blank">
+        <a style="display:block" id="proj6">
           <div class="col-xs-3 project" id="project6">
-            <h4 class="project-title">Coming Soon</h4
+            <h4 class="project-title">Personal Website</h4
           </div>
         </a>
       </div>
-
-
     </div>
+
+<!-- Project Modals -->
+
+
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closeBtn"><i class="fa fa-times"></i></span>
+    <h2>GIF BOX</h2>
+    <img class="projectPic" src="http://i.imgur.com/d4g1SSl.jpg" alt="">
+    <div class="container">
+      <div class="row">
+        <p class="project-text col-md-6 col-md-offset-3">Gif Box was an idea I had for mashing up your favorite gifs and music. Current build allows for a YouTube audio link. It also searches the giphy API for gifs and displays them as a rotating background image.</p>
+      </div>
+    </div>
+    <br>
+    <h4>Javascript | React | HTML | CSS</h4>
+    <br>
+    <a class="proj-link" href="http://gifbox.surge.sh" target="_blank">Demo Me</a>
+  </div>
+</div>
+
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closeBtn"><i class="fa fa-times"></i></span>
+    <h2>HEALTH CONNECT</h2>
+    <img class="projectPic" src="http://i.imgur.com/BYzJ4nQ.png" alt="">
+    <div class="container">
+      <div class="row">
+        <p class="project-text col-md-6 col-md-offset-3">A group project with a UX team providing mockups and wireframes. I worked on creating all of the front-end from the provided mockups. Also setup all page views and routes through express on the back-end/ The app connects children, through their guardians sign up, with doctor-care through the school nurse.</p>
+      </div>
+    </div>
+    <br>
+    <h4>JAVASCRIPT | JQUERY | MONGODB | NODEJS | EXPRESS | HTML | CSS</h4>
+    <br>
+    <a class="proj-link" href="http://health-connect-ga.herokuapp.com.sh" target="_blank">Demo Me</a>
+  </div>
+</div>
+
+<div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closeBtn"><i class="fa fa-times"></i></span>
+    <h2>HOOP IT UP</h2>
+    <img class="projectPic" src="http://i.imgur.com/FtqsqkO.png" alt="">
+    <div class="container">
+      <div class="row">
+        <p class="project-text col-md-6 col-md-offset-3">A simple score tracking app for people like me who love to play pick-up basketball. Mobile friendly. React-Native version to come next!</p>
+      </div>
+    </div>
+    <br>
+    <h4>JAVASCRIPT | REACT | HTML | CSS</h4>
+    <br>
+    <a class="proj-link" href="http://hoopitup.surge.sh" target="_blank">Demo Me</a>
+  </div>
+</div>
+
+<div id="myModal4" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closeBtn"><i class="fa fa-times"></i></span>
+    <h2>SANIC LAND</h2>
+    <img class="projectPic" src="http://i.imgur.com/CogBxxC.jpg" alt="">
+    <div class="container">
+      <div class="row">
+        <p class="project-text col-md-6 col-md-offset-3">Created an interactive game with on multiple accounts logging in and interacting with a selected racer. The display board updates the race progress of each user using web sockets. I came with the retro Sonic inspired design and built out the front-end in React.</p>
+      </div>
+    </div>
+    <br>
+    <h4>JAVASCRIPT | REACT | NODEJS | EXPRESS | WEBSOCKETS | HTML | CSS</h4>
+    <br>
+    <a class="proj-link" href="http://sanicland.herokuapp.com" target="_blank">Demo Me</a>
+  </div>
+</div>
+
+<div id="myModal5" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closeBtn"><i class="fa fa-times"></i></span>
+    <h2>WEATHER NOW</h2>
+    <img class="projectPic" src="http://i.imgur.com/7BVc4ua.png" alt="">
+    <div class="container">
+      <div class="row">
+        <p class="project-text col-md-6 col-md-offset-3">Created a custom weather web application. Retrieves city data based on the weather api and returns a 5 day forecast.</p>
+      </div>
+    </div>
+    <br>
+    <h4>JAVASCRIPT | JQUERY | HTML | CSS</h4>
+    <br>
+    <a class="proj-link" href="https://github.com/chaninator/weather-app" target="_blank">See The Code</a>
+  </div>
+</div>
+
+<div id="myModal6" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closeBtn"><i class="fa fa-times"></i></span>
+    <h2>PERSONAL SITE</h2>
+    <img class="projectPic" src="http://i.imgur.com/kwz9Y3i.jpg" alt="">
+    <div class="container">
+      <div class="row">
+        <p class="project-text col-md-6 col-md-offset-3">A portfolio site created featuring my photography work and and demonstrating my first site build. Fully responsive and built with bootstrap.</p>
+      </div>
+    </div>
+    <br>
+    <h4>JAVASCRIPT | JQUERY | HTML | CSS</h4>
+    <br>
+    <a class="proj-link" href="https://github.com/chaninator/about-me" target="_blank">DEMO ME</a>
+  </div>
+</div>
+
+
+
+
+
 
 
   </section>
@@ -161,10 +278,10 @@
         <h2 class="section-title">Contact</h2>
 
         <div>
-          <div class="contact-icons"><a href="https://github.com/chaninator" target="_blank" style: "color: white"><i class="fa fa-github-alt fa-3x" style:"color: white"></i></a></div>
-          <div class="contact-icons"><a href="https://medium.com/@andrewchandev" target="_blank" style: "color: white"><i class="fa fa-medium fa-3x" style:"color: white"></i></a></div>
-          <div class="contact-icons"><a href="https://www.linkedin.com/in/andrewchandev/" style: "color: white" target="_blank"><i class="fa fa-linkedin-square fa-3x" style:"color: white"></i></a></div>
-          <div class="contact-icons"><a href="mailto:andrewchandev@gmail.com" style: "color: white" target="_blank"><i class="fa fa-envelope-o fa-3x" style:"color: white"></i></a></div>
+          <div class="contact-icons"><a href="https://github.com/chaninator" target="_blank" style: "color: white"><i class="fa fa-github-alt" style:"color: white"></i></a></div>
+          <div class="contact-icons"><a href="https://medium.com/@andrewchandev" target="_blank" style: "color: white"><i class="fa fa-medium" style:"color: white"></i></a></div>
+          <div class="contact-icons"><a href="https://www.linkedin.com/in/andrewchandev/" style: "color: white" target="_blank"><i class="fa fa-linkedin-square" style:"color: white"></i></a></div>
+          <div class="contact-icons"><a href="mailto:andrewchandev@gmail.com" style: "color: white" target="_blank"><i class="fa fa-envelope-o" style:"color: white"></i></a></div>
         </div>
 
       </div>
@@ -174,6 +291,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="js/animatedModal.js" charset="utf-8"></script>
   <script src="js/script.js"></script>
 
 </body>

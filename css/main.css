@@ -34,7 +34,7 @@ p {
 }
 
 a {
-  color: #42DCA3;
+  color: white;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -42,7 +42,7 @@ a {
 
 a:hover, a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #42DCA3;
 }
 
 .light {
@@ -50,54 +50,60 @@ a:hover, a:focus {
 }
 
 #project1:before, #project2:before, #project3:before, #project4:before, #project5:before, #project6:before {
- content: "";
- opacity: 0.3;
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;
- position: absolute;
- z-index: -1;
- transition: transform .8s ease-in-out;
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  transition: transform .8s ease-in-out;
 }
 
+/*GIF BOX*/
 #project1:before {
   background: url("http://i.imgur.com/d4g1SSl.jpg");
   background-position: center;
   background-size: cover;
 }
 
+/*HEALTH CONNECT*/
 #project2:before {
   background: url("http://i.imgur.com/BYzJ4nQ.png");
   background-position: center;
   background-size: cover;
 }
 
+/*HOOP IT UP*/
 #project3:before {
+  background: url("http://i.imgur.com/FtqsqkO.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/*SANIC LAND*/
+#project4:before {
   background: url("http://i.imgur.com/CogBxxC.jpg");
   background-position: center;
   background-size: cover;
 }
 
-#project4:before {
-  background: url("http://i.imgur.com/kwz9Y3i.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
+/*WEATHER APP*/
 #project5:before {
   background: url("http://i.imgur.com/7BVc4ua.png");
   background-position: center;
   background-size: cover;
 }
 
+/*PORTFOLIO SITE*/
 #project6:before {
-  background: url();
+  background: url("http://i.imgur.com/kwz9Y3i.jpg");
   background-position: center;
   background-size: cover;
 }
 
-#project1:hover .project-title, #project2:hover .project-title, #project3:hover .project-title, #project4:hover .project-title, #project5:hover .project-title, #project6:hover .project-title{
+#project1:hover .project-title, #project2:hover .project-title, #project3:hover .project-title, #project4:hover .project-title, #project5:hover .project-title, #project6:hover .project-title {
   color: black;
   background-color: white;
   opacity: 1;
@@ -185,9 +191,9 @@ a:hover, a:focus {
 }
 
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 1);
+  /*color: rgba(255, 255, 255, 1);*/
   outline: none;
-  text-decoration-line: overline;
+  color: #42DCA3;
   background-color: transparent;
 }
 
@@ -207,7 +213,6 @@ a:hover, a:focus {
 
 .navbar-custom .nav li.active a:hover {
   color: black;
-  text-decoration: overline;
 }
 
 .navname {
@@ -219,6 +224,75 @@ a:hover, a:focus {
   transition: visibility 0s, opacity 5s linear;
 }
 
+/*Modal CSS*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  text-align: center;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  -moz-transition: -moz-transform ease 0.5s;
+  -webkit-transition: -webkit-transform ease 0.5s;
+  -o-transition: -o-transform ease 0.5s;
+  -ms-transition: -ms-transform ease 0.5s;
+  transition: transform ease 0.5s;
+  height: 75px;
+  width: 75px;
+}
+
+.closeBtn:hover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.projectPic {
+  width: 600px;
+}
+
+.proj-link {
+  font-size: 2em;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 10px 30px;
+}
+
+.proj-link:hover {
+  background-color: rgba(66,220,163,.8);
+  color: white;
+}
+
+.project-text {
+  margin-top: 20px;
+  text-align: left;
+
+}
+
 @media (max-width: 800px) {
   .navbar {
     width: 100vw;
@@ -227,10 +301,9 @@ a:hover, a:focus {
     margin: 20px 10px 10px 10px;
     padding: 50px 50px;
   }
-  .project{
+  .project {
     flex-direction: column;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -243,7 +316,6 @@ a:hover, a:focus {
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
-
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: black;
@@ -258,9 +330,10 @@ a:hover, a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../imgs/bg.jpg) no-repeat bottom center scroll;
+  background: url(../imgs/bg2.jpg) no-repeat bottom center scroll;
   background-color: black;
   background-attachment: fixed;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -307,6 +380,7 @@ a:hover, a:focus {
 
 .intro .intro-body .brand-heading {
   font-size: 30px;
+  font-family: "Permanent Marker", sans-serif;
 }
 
 .intro .intro-body .intro-text {
@@ -319,9 +393,11 @@ a:hover, a:focus {
 }
 
 .contact-icons {
+  margin-top: 200px;
   padding: 0 30px;
   display: inline-block;
   color: white;
+  font-size: 5em;
 }
 
 a:hover a:focus {
@@ -352,11 +428,9 @@ a:hover a:focus {
     height: 100%;
     padding: 0;
   }
-
   .intro .intro-body .brand-heading {
     font-size: 60px;
   }
-
   .intro .intro-body .intro-text {
     font-size: 26px;
     font-family: "roboto";
@@ -390,7 +464,7 @@ a:hover a:focus {
   -moz-transition-duration: 1s;
 }
 
-.btn-rect i.animated  {
+.btn-rect i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
@@ -406,12 +480,10 @@ a:hover a:focus {
     -webkit-transform: scale(.8);
     transform: scale(.8);
   }
-
   50% {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
-
   100% {
     -webkit-transform: scale(.8);
     transform: scale(.8);
@@ -423,12 +495,10 @@ a:hover a:focus {
     -moz-transform: scale(.8);
     transform: scale(.8);
   }
-
   50% {
     -moz-transform: scale(1.1);
     transform: scale(1.1);
   }
-
   100% {
     -moz-transform: scale(.8);
     transform: scale(.8);
@@ -437,7 +507,6 @@ a:hover a:focus {
 
 .content-section {
   padding-top: 100px;
-
   /*test section */
   /*border: 3px solid white;*/
 }
@@ -467,8 +536,7 @@ a:hover a:focus {
   background-color: transparent;
 }
 
-.btn-default:hover,
-.btn-default:focus {
+.btn-default:hover, .btn-default:focus {
   border: 1px solid #42DCA3;
   outline: none;
   color: black;
