@@ -340,6 +340,12 @@ a:hover, a:focus {
   -o-background-size: cover;
 }
 
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .content {
   display: flex;
   justify-content: center;
@@ -355,7 +361,7 @@ a:hover, a:focus {
   background-color: rgba(255, 255, 255, 1);
   padding: 70px 40px;
   border: 2px solid white;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
 }
 
 .about-blurb:hover {
@@ -389,7 +395,7 @@ a:hover, a:focus {
 
 .profile-container {
   text-align: center;
-  padding-top: 120px;
+  /*padding-top: 120px;*/
 }
 
 .contact-icons {
