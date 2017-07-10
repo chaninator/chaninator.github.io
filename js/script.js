@@ -13,7 +13,7 @@ function textFunc() {
       clearInterval(timer1);
 
       // Start blinking animation!
-      timer2 = setInterval("blinkFunc()", 200);
+      // timer2 = setInterval("blinkFunc()", 200);
 
    } else {
       msgCount++;
