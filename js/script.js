@@ -1,7 +1,7 @@
 var message = "Hi, I'm Andrew! Come see what I've been up to.";
 var msgCount = 0;
-// var blinkCount = 0;
-// var blinkFlg = 0;
+var blinkCount = 0;
+var blinkFlg = 0;
 var timer1, timer2;
 var messageLabel = document.getElementById("messageLabel");
 
