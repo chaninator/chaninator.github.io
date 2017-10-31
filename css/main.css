@@ -272,7 +272,8 @@ a:hover, a:focus {
 }
 
 .projectPic {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .proj-link {
@@ -344,6 +345,7 @@ a:hover, a:focus {
 .about-content {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
 }
@@ -397,7 +399,6 @@ a:hover, a:focus {
 
 .profile-container {
   text-align: center;
-  /*padding-top: 120px;*/
 }
 
 .contact-icons {
@@ -519,7 +520,7 @@ a:hover a:focus {
   /*border: 3px solid white;*/
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .content-section {
     padding: 250px 0;
   }
