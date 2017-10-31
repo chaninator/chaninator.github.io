@@ -5,6 +5,8 @@ var blinkFlg = 0;
 var timer1, timer2;
 var messageLabel = document.getElementById("messageLabel");
 
+window.onresize = function(){ location.reload();
+
 function textFunc() {
    messageLabel.innerHTML = message.substring(0, msgCount);
 

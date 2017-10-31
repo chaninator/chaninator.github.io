@@ -114,10 +114,14 @@ a:hover, a:focus {
   transition: all 500ms ease;
 }
 
+.project-container {
+  text-align: center;
+}
+
 .project {
   border: 3px solid rgba(255, 255, 255, 1);
-  height: 325px;
-  width: 325px;
+  height: 360px;
+  width: 360px;
   margin: 20px;
   display: flex;
   justify-content: center;
