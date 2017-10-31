@@ -103,7 +103,7 @@ a:hover, a:focus {
   background-size: cover;
 }
 
-#project1:hover .project-title, #project2:hover .project-title, #project3:hover .project-title, #project4:hover .project-title, #project5:hover .project-title, #project6:hover .project-title {
+#proj1:hover .project-title, #proj2:hover .project-title, #proj3:hover .project-title, #proj4:hover .project-title, #proj5:hover .project-title, #proj6:hover .project-title {
   color: black;
   background-color: white;
   opacity: 1;
@@ -131,13 +131,6 @@ a:hover, a:focus {
   height: 300px;
   width: 300px;
   border: 2px solid rgba(255, 255, 255, 1)
-}
-
-.project-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 
 .project-title {
